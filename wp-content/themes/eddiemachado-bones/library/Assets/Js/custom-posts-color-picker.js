@@ -1,1 +1,0 @@
-jQuery('.color-field').wpColorPicker();
