@@ -1,0 +1,171 @@
+.wp-core-ui .button-primary{
+    background: #ff7402;
+    border-color: #ff7402;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu{
+    background: #ff7402;
+    color:#444444 !important;
+}
+
+#wpadminbar>#wp-toolbar a:focus span.ab-label, #wpadminbar>#wp-toolbar li.hover span.ab-label, #wpadminbar>#wp-toolbar li:hover span.ab-label{
+    color:#ff7402 !important;
+}
+#adminmenu a:hover{
+    color:#ff7402 !important;
+}
+
+#adminmenu li:hover div.wp-menu-image:before{
+    color:#444444 !important;
+}
+
+#adminmenu .current a:hover{
+    color:#444444 !important;
+}
+
+.media-frame a{
+    color:#ff7402 !important;
+}
+a, .media-frame a{
+    color:#ff7402;
+    font-weight: bold;
+}
+
+a:active, a:hover{
+    color:#ff7402;
+}
+
+#wpadminbar, #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap{
+    background: #444444;
+}
+
+input[type=checkbox]:checked:before{
+    color:#ff7402;
+}
+
+#misc-publishing-actions label[for=post_status]:before, #post-body #visibility:before, #post-body .misc-pub-revisions:before, .curtime #timestamp:before, span.wp-media-buttons-icon:before{
+    color: #ff7402;
+}
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus{
+    border-color: #ff7402;
+    -webkit-box-shadow: 0 0 2px rgba(255,116,2,.8);
+    box-shadow: 0 0 2px rgba(255,116,2,.8);
+
+}
+
+input[type=checkbox], input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
+    border: 1px solid rgba(255,116,2,.5);
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover{
+    background: #ff7402;
+    border-color: #444444;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,116,2,.6);
+    color: #444444;
+}
+
+#all-plugins-table .plugins a.delete, #media-items a.delete, #media-items a.delete-permanently, #nav-menu-footer .menu-delete, #search-plugins-table .plugins a.delete, .plugins a.delete, .row-actions span.delete a, .row-actions span.spam a, .row-actions span.trash a, .submitbox .submitdelete{
+    color: #ff7402;
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar .ab-top-menu>li:hover>.ab-item, #wpadminbar .ab-top-menu>li>.ab-item:focus, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus{
+    color:#ff7402;
+}
+
+#wpadminbar .quicklinks .menupop ul li a:focus, #wpadminbar .quicklinks .menupop ul li a:focus strong, #wpadminbar .quicklinks .menupop ul li a:hover, #wpadminbar .quicklinks .menupop ul li a:hover strong, #wpadminbar .quicklinks .menupop.hover ul li a:focus, #wpadminbar .quicklinks .menupop.hover ul li a:hover, #wpadminbar li .ab-item:focus:before, #wpadminbar li a:focus .ab-icon:before, #wpadminbar li.hover .ab-icon:before, #wpadminbar li.hover .ab-item:before, #wpadminbar li:hover #adminbarsearch:before, #wpadminbar li:hover .ab-icon:before, #wpadminbar li:hover .ab-item:before, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus, #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover{
+    color:#ff7402;
+}
+
+.postbox, .postarea{
+    box-shadow: 0 0 2px rgba(255,116,2,.9);
+    border: 1px solid rgba(255,116,2,.3);
+    padding: 2px;
+}
+
+#editable-post-name{
+    background-color:rgba(255,116,2,.5);
+}
+
+#poststuff h3,.wrap h2{
+    color:#ff7402;
+    font-weight: bold;
+}
+
+a:focus{
+    color:#ff7402;
+    box-shadow: 0 0 2px rgba(255,116,2,.9);
+    border: 1px solid rgba(255,116,2,.3);
+    border-color:#ff7402;
+}
+
+#header-logo {
+    background-image: url('path/to/my/image.png')!important;
+}
+
+.wp-admin-bar-wp-logo{
+    display:none
+}
+
+/*
+ * Added by Siya
+ */
+.csi-sparkplug {
+background-color:#ffffff;
+padding:10px;
+}
+
+.admin-security .postbox .hndle,
+.csi-sparkplug .postbox .hndle {
+    cursor: default;
+}
+
+.csi-sparkplug form h3, .csi-sparkplug .csi-contact-details h3, #postbox-menu-container h3 {
+    /*border-bottom: 2px solid #ff7402;
+    color: #ff7402;
+    font-size: 24px;*/
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.sparkplug-header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+#postbox-menu-container {
+    margin-right: 20px;
+    width: auto !important;
+}
+#postbox-menu-container .postbox {
+    padding: 10px;
+}
+.sparkplug-form {
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+}
+.sparkplug-form p.submit input{
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none;
+    float: right;
+    height: auto;
+    padding: 6px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.sparkplug-form .form-table th {
+    width: 110px;
+}
+.sparkplug-form textarea {
+    width: 25em;
+}
+.sparkplug-form p {
+    margin-top: 0;
+    padding-top: 0;
+}
+.csi-contact-details {
+    /*border: 2px solid #ff7402;*/
+    float: left;
+    padding: 10px;
+}

@@ -1,0 +1,51 @@
+body{
+    background-color: #ff7402;
+}
+
+#login{
+    width:35%;
+}
+
+.login #backtoblog a, .login #nav a{
+    color:#white !important;
+}
+
+.login .message {
+    border:none;
+    background-color: #ff7402;
+    -webkit-box-shadow: 0 0 0px rgba(255,116,2,.8);
+    box-shadow: 0 0 0px rgba(255,116,2,.8);
+    color:white;
+}
+.login #backtoblog a, .login #nav a{
+    color:white;!important
+}
+
+.wp-core-ui .button-primary{
+    background-color: white;
+    color: #ff7402;
+    font-weight: bold;
+    width: 200px;
+}
+
+.login form{
+    background-color: #ff7402;
+    -webkit-box-shadow: 0 0 0px rgba(255,116,2,.8);
+    box-shadow: 0 0 0px rgba(255,116,2,.8);
+}
+
+.login label{
+    color:white;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover{
+    border-color: white;
+    color:white;
+}
+
+.login h1 a{
+    background-image:none,url("../Images/splash page2.png");
+    width: 495px;
+    height: 178px;
+    background-size: 100% 100%;
+}
