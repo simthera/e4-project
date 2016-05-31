@@ -1,5 +1,5 @@
 <?php
-    namespace library\Fields;
+    namespace CSI\Fields;
 
     // Exit if accessed directly
     if ( !defined( 'ABSPATH' ) ) exit;

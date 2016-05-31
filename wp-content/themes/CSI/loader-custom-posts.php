@@ -27,12 +27,51 @@
         'title',
         'thumbnail'
     ), array( 'description' => 'Banner Tester', 'icon' => 'dashicons-controls-play' ));
+   $bannerTest->addField('Banner image', 'Description Text', 'MediaSelector', 'Banner', array(), false);
     $bannerTest->addField('Call to Action', 'Enter a url for the call to action', 'Text', 'Additional Config', array(), false);
 
     $linkedPost = new CSI\CustomPosts\CustomPosts('Linked', false, array(
         'title',
         'editor'
     ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-controls-play' ));
+   $featuredblock = new CSI\CustomPosts\CustomPosts('Featured Block', false, array(
+       'title',
+       'editor',
+       'thumbnail'
+   ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-controls-play' ));
+   $products = new CSI\CustomPosts\CustomPosts('Products', false, array(
+       'title',
+       'editor',
+       'thumbnail'
+   ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-image-filter' ));
+$products->addField('Featured Image', 'This image will appear on slider', 'MediaSelector', 'Home Page Slider', array(), false);
+$products->addField('Logo', 'This image will also appear on the home page', 'MediaSelector', 'Home Page Slider', array(), false);
+$products->addField('Link to Broucher', 'Link to the broucher file', 'Text', 'Home Page Slider', array(), false);
+$products->addField('Link to Website', 'Link to the website', 'Text', 'Home Page Slider', array(), false);
+
+
+   $executives = new CSI\CustomPosts\CustomPosts('Executives', false, array(
+       'title',
+       'editor',
+       'thumbnail'
+   ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-businessman' ));
+   $contactdetails = new CSI\CustomPosts\CustomPosts('Contact Details', false, array(
+       'title',
+       'editor',
+       'thumbnail'
+   ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-location-alt' ));
+   $beeandnews = new CSI\CustomPosts\CustomPosts('BEE and News', false, array(
+       'title',
+       'editor',
+       'thumbnail'
+   ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-admin-page' ));
+   $beeandnews->addField('url', 'e.g www.e4.co.za/test', 'Text', 'Link To', array(), false);
+   $threefeaturedblocks = new CSI\CustomPosts\CustomPosts('Three Featured Blocks', false, array(
+       'title',
+       'editor',
+       'thumbnail'
+   ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-controls-play' ));
+
 
     $example = new CSI\CustomPosts\CustomPosts('Example', false, array(
         'title',

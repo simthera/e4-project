@@ -51,6 +51,6 @@ function left_admin_footer_text_output($text) {
 
 add_filter('update_footer', 'right_admin_footer_text_output', 11); //right side
 function right_admin_footer_text_output($text) {
-    $text = 'Theme by <a href="http://www.creativespark.co.za">Creative Spark</a>';
+    $text = 'Theme by ';
     return $text;
 }

@@ -1,7 +1,7 @@
 <?php
     namespace CSI\CustomPosts;
     use CSI\CustomFields\CustomFields;
-    use CSI\CustomFields\CustomTaxFields;
+    use CSI\Sortable\Sortable;
     // Exit if accessed directly
     if ( !defined( 'ABSPATH' ) ) exit;
 
@@ -18,7 +18,8 @@
         private $taxFields = array();
 
         public function __construct($postTypeName,$taxonomies = false, $supports = array('title','editor'), $extra = array('description'=>'A new post type','icon'=>'dashicons-menu')){
-
+            add_action('admin_footer', array(this,'Sortable'));
+            $sortable = new Sortable();
             $this->postTypeID = strtolower(substr($postTypeName, 0, 20));
             $this->url = strtolower(str_replace(" ","-",$postTypeName));
             $this->multipleName = $postTypeName;

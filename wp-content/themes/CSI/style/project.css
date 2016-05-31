@@ -8,7 +8,7 @@ body {
   overflow: hidden;
 }
 section {
-  overflow: hidden;
+  /*overflow: hidden;*/
   display: block;
 }
 .sidebar {

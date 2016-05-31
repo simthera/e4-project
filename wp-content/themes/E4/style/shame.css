@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------*\
+  SHAME.CSS
+	All CSS from this file should be considered NOT best-practice and
+	this is also a temporary place for developers to put code that will
+	later be integrated into the main codebase.
+	Read: http://csswizardry.com/2013/04/shame-css/
+\*------------------------------------------------------------------------*/
+/*BANNERS CSS SHOULD BE VERY TARGETED AND NOT INTERFERE ANYWHERE*/
+.csi-banner {
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.csi-banner ul {
+  webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+.csi-banner ul li {
+  float: left;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  max-height: 400px;
+}
+.csi-banner ul li .bannerContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.csi-banner ul li .bannerContent .spacer {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(10, 10, 10, 0.5);
+  padding: 10px;
+  max-height: 100%;
+  overflow: hidden;
+  margin: 0px auto;
+  width: 1280px;
+  max-width: 80%;
+}
+.csi-banner ul li .bannerContent .spacer h1 {
+  color: white;
+}
+.csi-banner ul li .bannerContent .spacer p {
+  color: yellow;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .csi-banner ul li .bannerContent .spacer p {
+    display: none;
+  }
+}
+.csi-banner ul li img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.csi-banner span {
+  top: 0px;
+  width: 30px;
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.csi-banner .prev {
+  left: 0px;
+}
+.csi-banner .next {
+  right: 0px;
+}
+.csi-banner span:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.csi-banner .dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.csi-banner .dots .spacer {
+  color: white;
+  text-align: center;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.csi-banner .dots .spacer .current {
+  font-weight: bold;
+  color: purple;
+}
+.csi-banner .dots .spacer span {
+  position: relative;
+}
+/*END BANNER CODE*/

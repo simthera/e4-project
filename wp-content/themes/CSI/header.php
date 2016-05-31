@@ -6,22 +6,18 @@
     <?php wp_head(); ?>
 </head>
 <body class="<?php body_class(); ?>">
-<section class="menu-wrapper">
-    <div class="grid grid-pad">
-        <div class="col-3-12">
-            <div class="content logo">
-                <a href="/">
-                    <img src="<?php echo get_template_directory_uri() ?>/CSI/Assets/Images/csi-logo.png">
-                </a>
-            </div>
+    <div class="navigation-bar">
+        <div class="logo">
+            <img src="<?php echo get_template_directory_uri();?>/images/logo.png" alt="E4">
         </div>
-        <div class="col-9-12 nav-wrapper">
-            <div class="content">
-                <div class="navigation">
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
-                    <a class="toggle-nav" href="#">&#9776;</a>
-                </div>
-            </div>
+        <div class="main-navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
         </div>
+
     </div>
-</section>
+
+
+
+
+
+

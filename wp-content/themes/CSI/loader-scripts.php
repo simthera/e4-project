@@ -20,11 +20,20 @@ function csi_scripts() {
 	wp_register_script('csi-fancybox-js', get_template_directory_uri() . '/CSI/Assets/Apps/Fancybox/jquery.fancybox.pack.js', array('jquery'));
 	wp_enqueue_script( 'csi-fancybox-js' );
 
+	wp_register_script('csi-bxslider-js', get_template_directory_uri() . '/js/bxslider.js', array('jquery'));
+	wp_enqueue_script( 'csi-bxslider-js' );
+
+	wp_register_script('csi-bxslidermin-js', get_template_directory_uri() . '/js/bxslidermin.js', array('jquery'));
+	wp_enqueue_script( 'csi-bxslidermin-js' );
+
 	wp_register_script('csi-default-js', get_template_directory_uri() . '/js/general.js', array('jquery'));
 	wp_enqueue_script( 'csi-default-js' );
 
 	wp_register_style( 'style-css', get_template_directory_uri() . '/style/style.css' );
 	wp_enqueue_style( 'style-css' );
+
+	wp_register_style( 'jquery-bxslider-css', get_template_directory_uri() . '/style/jquery.bxslider.css' );
+	wp_enqueue_style( 'jquery-bxslider-css' );
 
 	wp_register_style( 'project-css', get_template_directory_uri() . '/style/project.css' );
 	wp_enqueue_style( 'project-css' );

@@ -1,6 +1,22 @@
 jQuery(document).ready(function() {
     // Initialize Normal Fancybox for a class .fancybox
+
+    jQuery('.bxslider').bxSlider();
     jQuery('.fancybox').fancybox();
+
+    jQuery('.slide-one').bxSlider({
+        minSlides: 1,
+        slideWidth: 800,
+        maxSlides: 2,
+        slideMargin: 5,
+        moveSlides: 2,
+        speed: 1900,
+        hover: true,
+        responsive: true,
+        auto: false,
+        autoControl: true,
+        captions: true
+    });
 
     // THIS IS FOR THE MAIN NAVIGATION
     jQuery('.toggle-nav').click(function(e) {
