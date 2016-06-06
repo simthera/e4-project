@@ -44,10 +44,11 @@
        'editor',
        'thumbnail'
    ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-image-filter' ));
-$products->addField('Featured Image', 'This image will appear on slider', 'MediaSelector', 'Home Page Slider', array(), false);
-$products->addField('Logo', 'This image will also appear on the home page', 'MediaSelector', 'Home Page Slider', array(), false);
-$products->addField('Link to Broucher', 'Link to the broucher file', 'Text', 'Home Page Slider', array(), false);
-$products->addField('Link to Website', 'Link to the website', 'Text', 'Home Page Slider', array(), false);
+    $products->addField('Icon', 'This image will appear on as an overlay on the home page', 'MediaSelector', 'Products Section', array(), false);
+    $products->addField('Featured Image', 'This image will appear on slider', 'MediaSelector', 'Home Page Slider', array(), false);
+    $products->addField('Logo', 'This image will also appear on the home page', 'MediaSelector', 'Home Page Slider', array(), false);
+    $products->addField('Link to Broucher', 'Link to the broucher file', 'Text', 'Home Page Slider', array(), false);
+    $products->addField('Link to Website', 'Link to the website', 'Text', 'Home Page Slider', array(), false);
 
 
    $executives = new CSI\CustomPosts\CustomPosts('Executives', false, array(
@@ -55,6 +56,7 @@ $products->addField('Link to Website', 'Link to the website', 'Text', 'Home Page
        'editor',
        'thumbnail'
    ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-businessman' ));
+    $executives->addField('Position', 'e.g CEO', 'Text', 'Executive Position', array(), false);
    $contactdetails = new CSI\CustomPosts\CustomPosts('Contact Details', false, array(
        'title',
        'editor',
@@ -71,6 +73,7 @@ $products->addField('Link to Website', 'Link to the website', 'Text', 'Home Page
        'editor',
        'thumbnail'
    ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-controls-play' ));
+    $threefeaturedblocks->addField('White icon', 'this icon will show on hover over', 'MediaSelector', 'Grouping Name', array(), false);
 
 
     $example = new CSI\CustomPosts\CustomPosts('Example', false, array(

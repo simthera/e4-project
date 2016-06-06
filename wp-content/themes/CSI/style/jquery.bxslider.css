@@ -102,20 +102,22 @@
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	background: url('../images/slider_next.png') no-repeat 0 ;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	background: url('../images/slider_prev.png') no-repeat ;
 }
-
+.bx-pager.bx-default-pager {
+	display: none;
+}
 .bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
+
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+
 }
 
 .bx-wrapper .bx-controls-direction a {

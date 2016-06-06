@@ -26,7 +26,7 @@
     </div>
 </section>
 <section class="support-footer col-1-1">
-    <p>Need Help or Have a Question? <span><a href="">Support</a> </span></p>
+    <p class="support-line">Need Help or Have a Question? <span><a href="">Support</a> </span></p>
 </section>
 <?php wp_footer(); ?>
 </body>

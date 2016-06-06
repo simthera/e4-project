@@ -23,9 +23,100 @@ html {
 	font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 	color: #4d4d4f;
 }
+/*========================= fonts end here ========================================*/
+@font-face {
+	font-family: 'OpenSans-Extrabold';
+	src: url('fonts/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),  url('fonts/OpenSans-Extrabold.woff') format('woff'), url('fonts/OpenSans-Extrabold.ttf')  format('truetype'), url('fonts/OpenSans-Extrabold.svg#OpenSans-Extrabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-ExtraboldItalic';
+	src: url('fonts/OpenSans-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),  url('fonts/OpenSans-ExtraboldItalic.woff') format('woff'), url('fonts/OpenSans-ExtraboldItalic.ttf')  format('truetype'), url('fonts/OpenSans-ExtraboldItalic.svg#OpenSans-ExtraboldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url('fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),  url('fonts/OpenSans-Light.woff') format('woff'), url('fonts/OpenSans-Light.ttf')  format('truetype'), url('fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'OpenSans-Semibold';
+	src: url('fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),  url('fonts/OpenSans-Semibold.woff') format('woff'), url('fonts/OpenSans-Semibold.ttf')  format('truetype'), url('fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-SemiboldItalic';
+	src: url('fonts/OpenSans-SemiboldItalic.eot?#iefix') format('embedded-opentype'),  url('fonts/OpenSans-SemiboldItalic.woff') format('woff'), url('fonts/OpenSans-SemiboldItalic.ttf')  format('truetype'), url('fonts/OpenSans-SemiboldItalic.svg#OpenSans-SemiboldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansLight-Italic';
+	src: url('fonts/OpenSansLight-Italic.eot?#iefix') format('embedded-opentype'),  url('fonts/OpenSansLight-Italic.woff') format('woff'), url('fonts/OpenSansLight-Italic.ttf')  format('truetype'), url('fonts/OpenSansLight-Italic.svg#OpenSansLight-Italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'open_sansbold_italic';
+	src: url('fonts/opensans-bolditalic-webfont-webfont.woff2') format('woff2'),
+	url('fonts/opensans-bolditalic-webfont-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'open_sansbold';
+	src: url('fonts/opensans-bold-webfont-webfont.woff2') format('woff2'),
+	url('fonts/opensans-bold-webfont-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'open_sansitalic';
+	src: url('fonts/opensans-italic-webfont-webfont.woff2') format('woff2'),
+	url('fonts/opensans-italic-webfont-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('fonts/opensans-regular-webfont-webfont.woff2') format('woff2'),
+	url('fonts/opensans-regular-webfont-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
 
 /* HEADINGS - Set your main heading sizes, line heights and margins in Frankly.css */
-h1 {
+/*h1 {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	font-style: italic;
 }
@@ -34,7 +125,7 @@ h3 {
 }
 h4 {
 	font-weight: 300;
-}
+}*/
 
 
 
@@ -50,18 +141,52 @@ h4 {
 	background: #000000;
 	color: #FFFFFF;
 	height: 100%;
-	width: 100%;
+	width: 25%;
+	padding: 10px 50px;
 	position: fixed;
 }
 .section-header {
 	background: #323539;
+	color: #FFFFFF;
+	font-family: 'OpenSans-Semibold';
+}
+.section-header h3 {
+	margin-top: 15px;
 }
 .main-navigation ul li {
 	list-style-type: none;
 	display: list-item;
+	margin-bottom: 20px;
+	margin-left: 0;
 }
 .main-navigation a {
 	color: #FFFFFF;
+}
+.main-navigation {
+	margin-top: 10px;
+	font-family: 'OpenSans-Semibold',sans-serif;
+	border-bottom: 1px solid #FFFFFF;
+	max-width: 204px;
+}
+.client-log-in {
+	background: #FFFFFF;
+	width: 60%;
+	padding: 5px;
+	font-size: 12px;
+	text-align: center;
+	margin: 40px 0;
+}
+.client-log-in a {
+	color: #000000;
+}
+.support-info {
+	font-size: 13px;
+	color: #fefefe;
+	margin-top: 30px;
+}
+.support-info p {
+	margin-bottom: 1px;
+	font-family: 'open_sansregular';
 }
 .right-side {
 	position: relative;
@@ -69,17 +194,45 @@ h4 {
 }
 .featured-content-blocks {
 	background: #FFFFFF;
+	font-family: 'open_sansregular';
+	font-size: 12px;
+	color: #010101;
+	padding: 68px 64px;
+}
+.section-header h2 {
+	margin: 14px 0;
+	font-size: 19px;
+}
+.about-service-download {
+	padding: 10px 25px;
+}
+.conent-icon {
+	text-align: center;
+}
+.about-service-download > h2 {
+	font-size: 18px;
+	font-weight: 100;
+	text-align: center;
+	text-transform: uppercase;
+	color: #010101;
+	font-family: 'OpenSans-Semibold',sans-serif;
 }
 .section-header {
 	color: #FFFFFF;
 	text-align: center;
 }
-.conent-icon img {
-	width: 200px;
-	margin: -70px 0;
+.conent-icon  {
+	height: 90px;
+}
+.download-block img {
+	margin-top: -14px;
+}
+.service-block img {
+	margin-top: -8px;
 }
 .bee-news {
 	background: #d7d7d7;
+	font-size: 12px;
 	padding: 20px 80px;
 	text-align: center;
 }
@@ -92,32 +245,218 @@ h4 {
 .block-1-featured {
 	background: #FFFFFF;
 	padding: 20px 30px;
-	min-height: 209px;
+	min-height: 304px;
+}
+section.three-featured-blocks {
+	background: #FFFFFF;
 }
 .block-1-featured:hover {
-	background: #000000;
+	/*-webkit-transition: all 2s ease;*/
+	/*-moz-transition: all 2s ease;*/
+	/*-o-transition: all 2s ease;*/
+	/*-ms-transition: all 2s ease;*/
+	/*transition: all 2s ease;*/
+	background: #323539;
 	color: #FFFFFF;
+}
+.block-1-featured:hover .black-icon {
+	/*-webkit-transition: all 1.5s ease;*/
+	/*-moz-transition: all 1.5s ease;*/
+	/*-o-transition: all 1.5s ease;*/
+	/*-ms-transition: all 1.5s ease;*/
+	/*transition: all 1.5s ease;*/
+	opacity: 1;
+}
+.block-1-featured:hover .changing-icons {
+	/*-webkit-transition: all 2s ease;*/
+	/*-moz-transition: all 2s ease;*/
+	/*-o-transition: all 2s ease;*/
+	/*-ms-transition: all 2s ease;*/
+	/*transition: all 2s ease;*/
+	opacity: 0;
+	color: #FFFFFF;
+}
+.black-white-icons {
+	margin-bottom: -41px;
+	margin-top: 53px;
+	text-align: center;
+}
+.black-icon {
+	bottom: 55px;
+	position: relative;
+	opacity: 0;
+}
+.block-1-featured:hover .featured-title {
+	color: #FFFFFF;
+}
+.featured-title {
+	text-align: center;
+	font-family: 'OpenSans-Semibold',sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+.block-1-featured  p {
+	font-size: 12px;
 }
 .slider-section {
 	background: url("../images/slider_background.png") repeat;
 	padding: 20px;
 }
-.slider {
+/*.slider {*/
+	/*display: inline-block;*/
+/*}*/
+.slider-button {
 	display: inline-block;
+	float: left;
+	width: 100px;
+	text-align: center;
+	padding: 5px;
+	font-size: 11px;
+}
+.products-product {
+	max-height: 250px;
+	overflow: hidden;
+}
+.product-featured-image img {
+	-webkit-filter: brightness(100%);
+	margin-top: -95px;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	transition: all 2s ease;
+}
+.product-featured-image img:hover {
+	-webkit-filter: brightness(80%);
+	margin-top: -66px;
+}
+.product-icon {
+	top: 109px;
+	display: block;
+	left: 127px;
+	position: relative;
+	z-index: 999;
+	width: 59px;
+	margin: 0;
+}
+.product-icon img {
+	margin-top: 0;
+}
+.product-icon img:hover {
+	margin-top: 0;
+}
+.executives-infor-overlay {
+	background: rgba(255, 255, 255, 0.7);
+	bottom: 236px;
+	position: relative;
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-o-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+	text-align: center;
+	padding: 66px 0;
+	opacity: 0;
+}
+.executives-blocks:hover .executives-infor-overlay {
+	opacity: 1;
+}
+.executives-blocks {
+	max-height: 237px;
+}
+.executive-name {
+	font-family: "OpenSans-Semibold";
+	font-size: 13px;
+	color: #000000;
+	text-transform: uppercase;
+	margin-bottom: -1px;
+	margin-top: 51px;
+}
+.executive-position {
+	font-family: "OpenSans-Semibold";
+	font-size: 12px;
+}
+.with-border {
+	border-bottom: 1px solid #999999;
+	padding-bottom: 15px;
+}
+.featured-slide-heading {
+	font-family: 'OpenSans-Semibold';
+	font-weight: normal;
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.slider-sides{
+	padding: 88px 80px 40px;
+}
+.product-logo {
+	margin-top: 45px;
+}
 
+.product-slider-content {
+	font-family: 'OpenSans-Light';
+}
+.slider-button a:hover {
+	text-decoration: none;
+}
+.visit-website {
+	background: #8fabbb;
+	margin-right: 10px;
+}
+.visit-website a {
+	color: #FFFFFF;
+}
+.view-broucher{
+	border: 1px solid #000000;
+}
+.view-broucher a {
+	color: #000000;
 }
 .footer {
 	background: url('../images/contact-details-background.png');
 	color: #FFFFFF;
-	padding: 50px;
+	padding: 100px;
 }
 .footer-contact-details .contact-content p {
 	margin-bottom: 5px;
 	line-height: normal;
+}
+.pin-icon {
+	margin-bottom: 31px;
+}
+.footer-contact-details h3 {
+	font-family: 'OpenSans-Semibold';
+	font-size: 17px;
+	font-weight: normal;
+}
+.support-footer a {
+	color: #FFFFFF;
+	margin-left: 10px;
+	border: 1px solid #fff;
+	padding: 5px 21px;
+}
+.support-footer a:hover {
+	text-decoration: none;
+}
+.support-line {
+	font-size: 12px;
+	margin: 12px;
+	text-transform: uppercase;
+}
+.contact-content {
+	font-family: 'open_sansregular';
+	font-size: 12px;
 }
 .support-footer {
 	background: #000000;
 	color: #FFFFFF;
 	padding: 10px 0;
 	text-align: center;
+}
+/* Executives page */
+.executives-dets {
+	background: rgba(255, 255, 255, 0.7);
+	bottom: 38px;
+	position: relative;
 }
