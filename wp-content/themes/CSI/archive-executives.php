@@ -15,11 +15,11 @@
 	<div class="col-1-1 section-header">
 		<h2>Executives</h2>
 	</div>
-	<section class="col-1-1">
-		<div class="col-1-2">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/executives-icon.png"  alt=""/>
+	<section class="col-1-1 first-white-section">
+		<div class="col-1-2 block-pad">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/executives-icon.png" width="150"  alt=""/>
 		</div>
-		<div class="col-1-2">
+		<div class="col-1-2 block-pad left-border">
 			<?php
 			$page_id = 70;  //Page ID
 			$page_data = get_page( $page_id );
@@ -32,20 +32,31 @@
 			?>
 		</div>
 	</section>
-	<hr />
-	<section class="listing-content">
+	<div class="col-11-12 section-separator">
+
+	</div>
+
+	<section class="listing-content col-1-1">
 
 		<?php while(have_posts()) : the_post(); ?>
 			<?php $meta = get_post_meta(get_the_ID()); ?>
 				<div class="col-1-5">
 					<div class="executives-page-image">
 
-						<img style="width:100%;" src="/<?php echo CSI\Image\ImageResizer::imageResize(get_post_thumbnail_id(get_the_ID()), 201, 200, true, array()) ?>" width="201" height="200" alt="Content Teaser Sample">
+						<img style="width:100%;" src="/<?php echo CSI\Image\ImageResizer::imageResize(get_post_thumbnail_id(get_the_ID()), 201, 250, true, array()) ?>" width="201" height="250" alt="Content Teaser Sample">
 					</div>
 					<div class="executives-dets">
-						<?php echo the_title(); ?>
-						<div class=""><?php echo $meta['csi_executive_positionposition'][0]; ?></div>
+						<p class="executive-small-title"><?php echo the_title(); ?></p>
+						<div class="executive-position-small"><?php echo $meta['csi_executive_positionposition'][0]; ?></div>
 					</div>
+					<div class="executive-info">
+
+						<div class="executive-info-content">
+						<?php echo the_content(); ?>
+						</div>
+						<img src="<?php echo get_template_directory_uri()?>/images/read-more.png" class="read-more" width="20"/>
+					</div>
+
 				</div>
 		<?php endwhile; ?>
 	</section>

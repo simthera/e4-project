@@ -74,7 +74,11 @@
        'thumbnail'
    ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-controls-play' ));
     $threefeaturedblocks->addField('White icon', 'this icon will show on hover over', 'MediaSelector', 'Grouping Name', array(), false);
-
+    $clients = new CSI\CustomPosts\CustomPosts('Clients', false, array(
+        'title',
+        'thumbnail',
+        'excerpt'
+    ), array( 'description' => 'Example of all Custom Fields', 'icon' => 'dashicons-smiley' ));
 
     $example = new CSI\CustomPosts\CustomPosts('Example', false, array(
         'title',
@@ -133,3 +137,17 @@
     $example->addField('Wysiwyg', 'Description Text', 'WYSIWYG', 'Another Group', array(), false);
 
 
+add_action( 'init', 'create_e4_taxes' );
+function create_e4_taxes(){
+    register_taxonomy
+    (
+        'category',
+        array('clients','products'),
+        array
+        (
+            'hierarchical' => true,
+            'label' => __( 'Categories' ),
+            'public' => true
+        )
+    );
+}

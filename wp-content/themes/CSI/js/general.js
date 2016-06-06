@@ -5,7 +5,11 @@ jQuery(document).ready(function() {
         controls: true
     });
     jQuery('.fancybox').fancybox();
-    
+
+    jQuery('.read-more').on('click',function () {
+        jQuery('.executive-info-content').toggle();
+    });
+
     // THIS IS FOR THE MAIN NAVIGATION
     jQuery('.toggle-nav').click(function(e) {
         jQuery(this).toggleClass('active');

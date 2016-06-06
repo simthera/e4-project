@@ -1,6 +1,6 @@
 <?php
     /**
-     * @author Creative Spark
+     * @author Sim
      * CSI Wordpress Spine.
      *
      *         DO NOT EDIT
@@ -70,3 +70,11 @@
     add_action('widgets_init', 'csi_load_widget');
 
     add_theme_support('post-thumbnails'); // This feature enables post-thumbnail support for a theme
+
+/**
+ * Enables the Excerpt meta box in Page edit screen.
+ */
+function wpcodex_add_excerpt_support_for_pages() {
+    add_post_type_support( 'page', 'excerpt' );
+}
+add_action( 'init', 'wpcodex_add_excerpt_support_for_pages' );
